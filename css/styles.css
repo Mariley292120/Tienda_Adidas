@@ -1,5 +1,5 @@
 :root{
-/Colores/
+/*Colores*/
 --color-primary: #000000;
 --color-on-primary: #ffffff;
 --color-surface: #faf9fa;
@@ -30,7 +30,7 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
-/Reinicio/base/
+/*Reinicio/base*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -432,8 +432,10 @@ flex-direction: column;
 gap: var(--space-lg);
 }
 @media (min-width: 768px) { 
+
 .formulario .fila { flex-direction: row; }
 }
+
 .formulario .boton {
 margin-top: var(--space-md);
 width: 100%;
@@ -444,9 +446,25 @@ align-items: center;
 gap: var(--space-sm);
 }
 @media (min-width: 768px) {
+
 .formulario .boton { width: auto; }
 } 
-
+.campo{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  width: 100%;
+}
+.campo label{
+font-family: var(--font-body);
+font-size: 14px;
+line-height: 20px;
+font-weight: 20px;
+font-weight: 700;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--color-on-surface) ;
+}
 .campo input, .campo textarea {
   background: var(--color-surface);
   border: none;
